@@ -1,0 +1,677 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, .0">
+        <meta charset="UTF-8">
+        <script>
+        function bukaSurat(){
+            document.getElementById("surat").style.display = "block";
+        }
+
+</script>
+        <style>
+            body {
+                background-color: violet;
+            }
+            th {
+                background-color: palevioletred;
+            }
+            td {
+                background-color: pink;
+            }
+            tr {
+                font-family: 'Times New Roman', Times, serif;
+            }
+            tr:hover td {
+                background-color: #f2c6ff;
+            }
+            body {
+                background: linear-gradient(to right, palevioletred, pink);
+            }
+            td {
+                cursor: pointer;
+            }
+            .review-row td {
+                background-color: palevioletred;
+            }
+
+            /* opening */
+            .surat{
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                color: palevioletred;
+            }
+
+            /* foto */
+            .gallery{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 30px;
+            }
+            .foto{
+                text-align: center;
+            }
+            .foto img{
+                width: 250px;
+                border-radius: 20px;
+                cursor: pointer;
+            }
+            /* caption awalnya hilang */
+            .caption{
+                display: none;
+                margin-top: 10px;
+                background: white;
+                padding: 10px;
+                border-radius: 15px;
+                width: 250px;
+            }
+            /* tabel */
+            table {
+                width:100%;
+                max-width: 900px;
+                margin: auto;
+            }
+            .bungkus{
+                text-align: center;
+                margin-top: 100px;
+            }
+            /* tombol */
+            button{
+                padding: 12px 25px;
+                border: none;
+                border-radius: 15px;
+                background: pink;
+                font-size: 18px;
+                cursor: pointer;
+            }
+            /* surat */
+            .surat{
+                background: #fff8f0;
+                width: 80%;
+                max-width: 500px;
+                margin: 30px auto;
+                padding: 25px;
+                border-radius: 20px;                
+                border: 3px solid #f4acb7;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+                display: none;
+                animation: muncul 0.5s ease;
+            }
+            /* animasi */
+            @keyframes muncul{
+                from{
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to{
+            opacity: 1;
+            transform: translateY(0);
+            }
+        }
+            .gallery{
+                style="margin-bottom: 50px;"
+            }
+
+            @keyframes goyang{
+            0%{
+                transform: translateY(0px);
+            }
+            50%{
+                transform: translateY(-10px);
+            }
+            100%{
+                transform: translateY(0px);
+            }
+        }
+            .foto1{
+                position: absolute;
+                left: 2%;
+                top: 20%;
+                width: 200px;
+                border-radius: 20px;
+                animation: goyang 3s ease-in-out infinite;
+            }
+            .foto2{
+                position: absolute;
+                right: 2%;
+                top: 20%;
+                width: 200px;
+                border-radius: 20px;
+                animation: goyang 4s ease-in-out infinite;
+            }
+        </style>
+    </head>
+    <body style="font-family: 'Times New Roman', Times, serif;line-height: 1.6;">
+        <!-- opening -->
+
+        <div class="bungkus">
+            <button onclick="bukaSurat()" style="font-family: fantasy; font-size: 50px; color: palevioletred;">
+                🎊HAPPY BIRTHDAY🎊
+                <p>💌</p>
+            </button>
+            <div id="surat" class="surat">
+                <h2>💖"17"💖</h2>
+                <p>
+                    Happy birthday yaa cantikkk...
+                    aloww cantikk alhamdulillah ya sayang 17 tahun dah kamu lalui alhamdulillah masih diberi kesehatan, kelancaran dalam semua hal. Pasti nda mudah yaa selama ini, tapiii kamu jangan lupa tuk bersyukur yaa dan asal kamu tahuuuu yang pastinya aku bangga sangat maa kamuuu cintaa,super duper akuu bangga,kamuu dahh huebatt poll poll poll cintaaa. Sehat selalu yaa sayang, jaga kesahatannya, jaga diri baik-baik, jangan bosan-bosan jadi orang baik ya pola makan dijaga yaa cantik lalu no no banyak pikiran mkayyyy cintakuuu....akuu kann selalu ada untuk kamuuu, semangatttt selaluuuuuuuu, acieeee udah legall xixixixixixixixixixxi. Makasih yaa cantik udah hadir sejauh ini, lopyuuuuuuuuuuuu mollllllllll🌸
+                </p>
+                <p>⬇SCROLL⬇</p>
+            </div>
+        </div>
+        <!-- selesai -->
+
+        <!-- foto -->
+            <div class="gallery">
+                <h1 style="margin-top: 100vh;margin bottom: 100px; color: palevioletred;font-family: fantasy;">GALLERY CANTIK</h1>
+                 <div class="foto">
+                    <div class="gallery">
+                        <!-- sekolah -->
+                        <div class="foto" style="margin-bottom: 50px;">
+                            <img
+                            src="kecil.PNG"
+                            onclick="tampil(this)">
+                            <p class="caption">
+                            aduhh cii lucuuu 🌸
+                        </p>
+                    </div>
+                        <div class="foto" style="margin-bottom: 50px;">
+                            <img
+                            src="Tk.PNG"
+                            onclick="tampil(this)">
+                            <p class="caption">
+                            cieee TK 🌸
+                        </p>
+                    </div>
+                        <div class="foto" style="margin-bottom: 50px;">
+                            <img
+                            src="Sd.PNG"
+                            onclick="tampil(this)">
+                            <p class="caption">
+                            ci cantik ESDEH ni yeeee xixixixixixi 🌸
+                        </p>
+                    </div>
+                        <div class="foto" style="margin-bottom: 50px;">
+                            <img
+                            src="Smp.PNG"
+                            onclick="tampil(this)">
+                            <p class="caption">
+                            Omakk dah Esempeh xixiixixi 🌸
+                        </p>
+                    </div>
+                        <div class="foto" style="margin-bottom: 50px;">
+                            <img
+                            src="17.PNG"
+                            onclick="tampil(this)">
+                            <p class="caption">
+                            Aduh Esemaa nihh ketwemu calon suamii ni yaitu "cahaya" 🌸
+                        </p>
+                    </div>
+                    <!-- sekolah selesai -->
+        <!-- tabel -->
+        <h1>DAFTAR PERJALANAN KITA</h1>
+        <p style="max-width: 600px; margin: auto;">Di setiap perjalanan, selalu ada cerita baru yang terukir. Waktu terasa singkat, namun penuh kenangan yang tak mudah dilupakan. Senang, bahagia, gembira, takut, sedih, hingga khawatir-semuanya menyatu dalam satu perjalanan yang indah, yang akan selalu kami kenang.</p>
+        <table border="1">
+            <tr>
+                <th style="text-align: center;">TEMPAT</th>
+                <th>TANGGAL</th>
+                <th>RATE</th>
+            </tr>
+            <tr  onclick="toggleReview(this, 'Tempat ini adalah tempat/objek wisata yang pertama kali kami kunjungi berdua, kami sudah ketempat ini kurang lebih sudah 10 kali, tempatnya adem dan tenang apalagi di yang harga 30rb,disitu berasa seperti hanya kita berdua yang memiliki tempatnya, di tempat ini ada berbagai kisah yang terukir, baik yang indah maupun sebaliknyaa, intinya tempat ini cocok untuk dikunjungi ulang, untuk htmnya ada 2 tempat ya ada yang 30rb per orng ada yang 8rb per orang')">
+                <td style="text-align: left;">Sumber Hijau Farm</td>
+                <td>16-Desember-2025</td>
+                <td>8/10</td>
+            </tr>
+            </tr>
+            <tr onclick="toggleReview(this, 'Tempatnya adem adem panas si, enak suasananya memberikan experience baru karena tebing tebing yang menjadi latar belakang kita. Sayangnya gazebonya kurang banyak tapii cukup sih, kita berkunjung kesini pada saat hari natal xixixixixi, pulangnya juga ditempa hujan yang membuat kami rehat dulu di pinggir jalan, rekomen untuk diulang, ohhh iyaa htm di tempat ini tuh 2 orang 25rb jadii terjangkau banget')">
+                <td style="text-align: left;">Batu Lawang</td>
+                <td>25-Desember-2025</td>
+                <td>7/10</td>
+            </tr>zz
+            <tr onclick="toggleReview(this, 'No komen, tapi disini kami bisa lepas tawaa dengan bebas, dan juga disini pertama kalinya kita ke arah kadipaten, oh iya untuk htmnya disini tuhhh 25rb, tapi lupa per orang atau ngganya')">
+                <td style="text-align: left;">Saung Teduh</td>
+                <td>07-Februari-2026</td>
+                <td>6/10</td>
+            </tr>
+            <tr onclick="toggleReview(this, 'Perjalanan yang tidak mudah, tapi mudah deng wkwkwk, disini aku cahaya secara pribadi baru pertama kali ke jalan yang nanjak dan berbelok-belok,deg deggan tapi alhamdulillah tempatnya ngga mengecewakan, htm disini hanya 10/orngnya jadi worth it banget untuk berkunjung kesana lagi, tempatnya adem dan sejuk, ngga begitu ramai juga sih jadi pas buat nenangin pikiran')">
+                <td style="text-align: left;">Waduk Sindangpano</td>
+                <td>17-Februari-2026</td>
+                <td>8/10</td>
+            </tr>
+            <tr onclick="toggleReview(this, 'adem,lucu,gratis, seru bisa date sambil baca buku, buku yang tersedia pun ada banyaak')">
+                <td style="text-align: left;">Perpustakaan Daerah</td>
+                <td>21-Februari-2026</td>
+                <td>7/10</td>
+            </tr>
+            <tr onclick="toggleReview(this, 'disini seru juga, tapi pulang dari sini kita bukber, disini pertama kali kita jalan sampai malam hari kwwkwkw, seruu walaupun harus huhujanan dll')">
+                <td style="text-align: left;">Playground</td>
+                <td>07-Maret-2026</td>
+                <td>7/10</td>
+            </tr>
+            <tr onclick="toggleReview(this, 'cocok untuk menjadi tempat sinngah atau ngadem xiixixixi htmnya juga hanya 5rb/orang, dan disini ada buayanyaaaaaa, alamak takutnyoooo')">
+                <td style="text-align: left;">Putri Borneo</td>
+                <td>-</td>
+                <td>7/10</td>
+            </tr>
+            <tr onclick="toggleReview(this, 'boom banget tempatnyaa luass banget, adem enakan pokoknya, sayangnya tempatnya cukup jauh dan jalannya lumayan ekstrem karena didatara tinggi, htm juga terjangkau 25rb untuk 2 oranggg')">
+                <td style="text-align: left;">Kebun Raya Kuningan</td>
+                <td>23-Maret-2026</td>
+                <td>8/10</td>
+            </tr>
+            <tr onclick="toggleReview(this, 'emm jalanna cukup curam dan berbelik belik yaa jadi pusing, sempet juga disasarin ama gmaps naurr xixixix, untuk tempatnya enak, adem tapi ngga terlalu banyak tempat duduk hanya segitu-gitu aja, untuk tempatnya adem sih airnya dingin tapi ngga sedingin di krk, untuk htmnya 10rb')">
+                <td style="text-align: left;">Situ Cikuda</td>
+                <td>03-Mei-2026</td>
+                <td>7/10</td>
+            </tr>
+        </table>
+        <!-- selesai -->
+                    <!-- foto bareng -->
+                        <div class="foto" style="margin-bottom: 25px;">
+                            <img
+                            src="Awal.PNG"
+                            onclick="tampil(this)">
+                            <p class="caption">
+                            kita usahakan rumah itu 🌸
+                        </p>
+                    </div>
+                        <div class="foto" style="margin-bottom: 25px;">
+                            <img
+                            src="School.PNG"
+                            onclick="tampil(this)">
+                            <p class="caption">
+                            dari depan akan tampak sederhana 🌸
+                        </p>
+                    </div>
+                         <div class="foto" style="margin-bottom: 25px;">
+                            <img
+                            src="Psas.PNG"
+                            onclick="tampil(this)">
+                            <p class="caption">
+                            tapi kebunya luas, 🌸
+                        </p>
+                    </div>
+                        <div class="foto" style="margin-bottom: 25px;">
+                            <img
+                            src="Pramuka.PNG"
+                            onclick="tampil(this)">
+                            <p class="caption">
+                            tanamannya mewah, megah 🌸
+                        </p>
+                    </div>
+                        <div class="foto" style="margin-bottom: 25px;">
+                            <img
+                            src="shf.PNG"
+                            onclick="tampil(this)">
+                            <p class="caption">
+                            kita usahakan rumah itu 🌸
+                        </p>
+                    </div>
+                        <div class="foto" style="margin-bottom: 25px;">
+                            <img
+                            src="batlaw.PNG"
+                            onclick="tampil(this)">
+                            <p class="caption">
+                            dari depan akan tampak sederhana 🌸
+                        </p>
+                    </div>
+                        <div class="foto" style="margin-bottom: 25px;">
+                            <img
+                            src="sau.PNG"
+                            onclick="tampil(this)">
+                            <p class="caption">
+                            tapi dibuat kuat,🌸
+                        </p>
+                    </div>
+                        <div class="foto" style="margin-bottom: 25px;">
+                            <img
+                            src="sindang.PNG"
+                            onclick="tampil(this)">
+                            <p class="caption">
+                            dirancang muat, 🌸
+                        </p>
+                    </div>
+                        <div class="foto" style="margin-bottom: 25px;">
+                            <img
+                            src="perpus.PNG"
+                            onclick="tampil(this)">
+                            <p class="caption">
+                            lega 🌸
+                        </p>
+                    </div>
+                        <div class="foto" style="margin-bottom: 25px;">
+                            <img
+                            src="play.PNG"
+                            onclick="tampil(this)">
+                            <p class="caption">
+                            urusan perabotan dan wangi-wangian 🌸
+                        </p>
+                    </div>
+                        <div class="foto" style="margin-bottom: 25px;">
+                            <img
+                            src="krk.PNG"
+                            onclick="tampil(this)">
+                            <p class="caption">
+                            kuserahkan pada 🌸
+                        </p>
+                    </div>
+                        <div class="foto" style="margin-bottom: 25px;">
+                            <img
+                            src="sunset.PNG"
+                            onclick="tampil(this)">
+                            <p class="caption">
+                            seleramu yang lebih maju 🌸
+                        </p>
+                    </div>
+                        <div class="foto" style="margin-bottom: 25px;">
+                            <img
+                            src="ciku.PNG"
+                            onclick="tampil(this)">
+                            <p class="caption">
+                            tapi tata ruang 🌸
+                        </p>
+                    </div>
+                        <div class="foto" style="margin-bottom: 25px;">
+                            <img
+                            src="ram.PNG"
+                            onclick="tampil(this)">
+                            <p class="caption">
+                            aku ikut pertimbangkan 🌸
+                        </p>
+                    </div>
+                        <div class="foto" style="margin-bottom: 25px;">
+                            <img
+                            src="bunga.PNG"
+                            onclick="tampil(this)">
+                            <p class="caption">
+                            karena kalau nanti 🌸
+                        </p>
+                    </div>
+                        <div class="foto" style="margin-bottom: 25px;">
+                            <img
+                            src="r2.PNG"
+                            onclick="tampil(this)">
+                            <p class="caption">
+                            kita punya kesibukkan 🌸
+                        </p>
+                    </div>
+                        <div class="foto" style="margin-bottom: 25px;">
+                            <img
+                            src="r3.PNG"
+                            onclick="tampil(this)">
+                            <p class="caption">
+                            malam 🌸
+                        </p>
+                    </div>
+                        <div class="foto" style="margin-bottom: 25px;">
+                            <img
+                            src="r4.PNG"
+                            onclick="tampil(this)">
+                            <p class="caption">
+                            tetap kumpul 🌸
+                        </p>
+                    </div>
+                        <div class="foto" style="margin-bottom: 25px;">
+                            <img
+                            src="r5.PNG"
+                            onclick="tampil(this)">
+                            <p class="caption">
+                            di meja 🌸
+                        </p>
+                    </div>
+                        <div class="foto" style="margin-bottom: 25px;">
+                            <img
+                            src="r6.PNG"
+                            onclick="tampil(this)">
+                            <p class="caption">
+                            panjang 🌸
+                        </p>
+                    </div>
+                        <div class="foto" style="margin-bottom: 25px;">
+                            <img
+                            src="r1.PNG"
+                            onclick="tampil(this)">
+                            <p class="caption">
+                            ruang makan kita 🌸
+                        </p>
+                    </div>
+                        <div class="foto" style="margin-bottom: 25px;">
+                            <img
+                            src="poto1.png"
+                            onclick="tampil(this)">
+                            <p class="caption">
+                            berbincang tentang hari yang panjanggg 🌸
+                        </p>
+                    </div>
+                        <div class="foto" style="margin-bottom: 25px;">
+                            <img
+                            src="fremio-photo-1778597838668.PNG"
+                            onclick="tampil(this)">
+                            <p class="caption">
+                            boleh kamu keliling 🌸
+                        </p>
+                    </div>
+                        <div class="foto" style="margin-bottom: 25px;">
+                            <img
+                            src="1778597151899_100.PNG"
+                            onclick="tampil(this)">
+                            <p class="caption">
+                            dunia dan temukan banyak 🌸
+                        </p>
+                    </div>
+                        <div class="foto" style="margin-bottom: 25px;">
+                            <img
+                            src="1778597247391_100.PNG"
+                            onclick="tampil(this)">
+                            <p class="caption">
+                            tempat-tempat untuk singgah 🌸
+                        </p>
+                    </div>
+                        <div class="foto" style="margin-bottom: 25px;">
+                            <img
+                            src="1778649109029_100.PNG"
+                            onclick="tampil(this)">
+                            <p class="caption">
+                            sementara 🌸
+                        </p>
+                    </div>
+                        <div class="foto" style="margin-bottom: 25px;">
+                            <img
+                            src="1778649150363_100.PNG"
+                            onclick="tampil(this)">
+                            <p class="caption">
+                            kamu   🌸
+                        </p>
+                    </div>
+                        <div class="foto" style="margin-bottom: 25px;">
+                            <img
+                            src="1778649183509_100.PNG"
+                            onclick="tampil(this)">
+                            <p class="caption">
+                            boleh 🌸
+                        </p>
+                    </div>
+                        <div class="foto" style="margin-bottom: 25px;">
+                            <img
+                            src="1778649219762_100.PNG"
+                            onclick="tampil(this)">
+                            <p class="caption">
+                            namai itu rumah 🌸
+                        </p>
+                    </div>
+                        <div class="foto" style="margin-bottom: 25px;">
+                            <img
+                            src="1778649988187_100.PNG"
+                            onclick="tampil(this)">
+                            <p class="caption">
+                            selama ada 🌸
+                        </p>
+                    </div>
+                        <div class="foto" style="margin-bottom: 25px;">
+                            <img
+                            src="1778650026346_100.PNG"
+                            onclick="tampil(this)">
+                            <p class="caption">
+                            mreka yang kamu cinta 🌸
+                        </p>
+                    </div>
+                        <div class="foto" style="margin-bottom: 25px;">
+                            <img
+                            src="1778650073761_100.PNG"
+                            onclick="tampil(this)">
+                            <p class="caption">
+                            di dalamnya 🌸
+                        </p>
+                    </div>
+                        <div class="foto" style="margin-bottom: 25px;">
+                            <img
+                            src="1778650116520_100.PNG"
+                            onclick="tampil(this)">
+                            <p class="caption">
+                            kita 🌸
+                        </p>
+                    </div>
+                        <div class="foto" style="margin-bottom: 25px;">
+                            <img
+                            src="1778650203823_100.PNG"
+                            onclick="tampil(this)">
+                            <p class="caption">
+                            usahakan 🌸
+                        </p>
+                    </div>
+                        <div class="foto" style="margin-bottom: 25px;">
+                            <img
+                            src="1778650447872_100.PNG"
+                            onclick="tampil(this)">
+                            <p class="caption">
+                            rumah 🌸
+                        </p>
+                    </div>
+                        <div class="foto" style="margin-bottom: 25px;">
+                            <img
+                            src="1778650496621_100.PNG"
+                            onclick="tampil(this)">
+                            <p class="caption">
+                            itu 🌸
+                        </p>
+                    </div>    
+                        <div class="foto" style="margin-bottom: 25px;">
+                            <img
+                            src="1.PNG"
+                            onclick="tampil(this)">
+                            <p class="caption">
+                            SEHAT SELALU CANTIK 🌸
+                        </p>
+                    </div>      
+                        <div class="foto" style="margin-bottom: 25px;">
+                            <img
+                            src="2.PNG"
+                            onclick="tampil(this)">
+                            <p class="caption">
+                            LANCAR REZEKINYA 🌸
+                        </p>
+                    </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+                        <div class="foto" style="margin-bottom: 25px;">
+                            <img
+                            src="3.PNG"
+                            onclick="tampil(this)">
+                            <p class="caption">
+                            SELALU DIBERI KEBAHAGAIAAN 🌸
+                        </p>
+                    </div>    
+                        <div class="foto" style="margin-bottom: 25px;">
+                            <img
+                            src="4.PNG"
+                            onclick="tampil(this)">
+                            <p class="caption">
+                            SELALU DIBERIKAN KESEHATA 🌸
+                        </p>
+                    </div>    
+                        <div class="foto" style="margin-bottom: 25px;">
+                            <img
+                            src="5.PNG"
+                            onclick="tampil(this)">
+                            <p class="caption">
+                            SELALU DIBERIKAN KEMUDAHAN 🌸
+                        </p>
+                    </div>    
+                        <div class="foto" style="margin-bottom: 25px;">
+                            <img
+                            src="6.PNG"
+                            onclick="tampil(this)">
+                            <p class="caption">
+                            DALAM MELAKUKAN SEMUA KEGIATANNYA 🌸
+                        </p>
+                    </div>    
+                        <div class="foto" style="margin-bottom: 25px;">
+                            <img
+                            src="7.PNG"
+                            onclick="tampil(this)">
+                            <p class="caption">
+                            CANTIK, IMUT, GEMAS, LUCU, SEMPURNA 🌸
+                        </p>
+                    </div>    
+                        <div class="foto" style="margin-bottom: 25px;">
+                            <img
+                            src="8.PNG"
+                            onclick="tampil(this)">
+                            <p class="caption">
+                            ITU KAMU 🌸
+                        </p>
+                    </div>    
+                        <div class="foto" style="margin-bottom: 25px;">
+                            <img
+                            src="9.PNG"
+                            onclick="tampil(this)">
+                            <p class="caption">
+                            17 🌸
+                        </p>
+                    </div>    
+                    <!-- selesai -->
+
+                    <img src="1778597151899_100.PNG" class="foto1">
+                    <img src="1778597247391_100.PNG" class="foto2">
+
+                    
+
+        <!-- musik -->
+         <audio autoplay loop hidden>
+            i <!-- <source src="Nadin Amizah - Semua Aku Dirayakan (Official Music Video).mp3" type="audio/mp3">  -->
+            <!-- bagian "musik.mp3 (diganti ama musik nama kita)" -->
+        </audio>
+        <!-- selesai -->
+
+        <script>
+        function toggleReview(row, reviewText) {
+            let nextRow = row.nextElementSibling;
+            if (nextRow && nextRow.classList.contains("review-row")) {
+                nextRow.remove();
+        } else {
+            let newRow = document.createElement("tr");
+            newRow.classList.add("review-row");
+            
+        let newCell = document.createElement("td");
+        newCell.colSpan = row.children.length;
+        newCell.innerText = reviewText;
+        
+        newRow.appendChild(newCell);
+        row.parentNode.insertBefore(newRow, row.nextSibling);
+  }
+}
+</script>
+        <script>
+        function tampil(gambar){
+            let caption =
+            gambar.nextElementSibling;
+            if(caption.style.display == "block"){
+            caption.style.display = "none";
+        }else{
+        caption.style.display = "block";
+    }
+}
+
+</script>
+    </body>
+</html>
