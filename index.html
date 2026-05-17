@@ -92,7 +92,7 @@
             .surat{
                 background: #fff8f0;
                 width: 80%;
-                max-width: 500px;
+                max-width: 300px;
                 margin: auto;
                 padding: 20px;
                 border-radius: 20px;                
@@ -147,9 +147,15 @@
     </head>
     <body style="font-family: 'Times New Roman', Times, serif;line-height: 1.6;">
         <!-- opening -->
-
+        <!-- musik -->
+         <audio id="musik" loop>
+             <source src="Nadin Amizah - Semua Aku Dirayakan (Official Music Video).mp3" type="audio/mp3">
+         </audio>
+        <button onclick="playMusic()">
+            Putar Musik 🎵
+        </button>
         <div class="bungkus">
-            <button onclick="bukaSurat()" style="font-family: fantasy; font-size: 30px; color: palevioletred;">
+            <button onclick="bukaSurat()" style="font-family: fantasy; font-size: 40px; color: palevioletred;">
                 🎊HAPPY BIRTHDAY🎊
                 <p>💌</p>
             </button>
@@ -166,7 +172,7 @@
 
         <!-- foto -->
             <div class="gallery">
-                <h1 style="margin-top: 100vh;margin bottom: 100px; color: palevioletred;font-family: fantasy;">GALLERY CANTIK</h1>
+                <h1 style="margin bottom: 100px; color: palevioletred;font-family: fantasy;">GALLERY CANTIK</h1>
                  <div class="foto">
                     <div class="gallery">
                         <!-- sekolah -->
@@ -634,15 +640,12 @@
                     <img src="1778597151899_100.PNG" class="foto1">
                     <img src="1778597247391_100.PNG" class="foto2">
 
-                    
+<script>
 
-        <!-- musik -->
-         <audio autoplay loop hidden>
-            i <source src="Nadin Amizah - Semua Aku Dirayakan (Official Music Video).mp3" type="audio/mp3">  
-            <!-- bagian "musik.mp3 (diganti ama musik nama kita)" -->
-        </audio>
-        <!-- selesai -->
-
+function playMusic(){
+    document.getElementById("musik").play();
+}
+</script>
         <script>
         function toggleReview(row, reviewText) {
             let nextRow = row.nextElementSibling;
