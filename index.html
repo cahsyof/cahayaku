@@ -725,11 +725,11 @@
                             <p class="caption">
                             itu 🌸
                         </p>
-                    <!-- </div>    
+                    </div>    
                         <h1 style="color: palevioletred;">⬇KLIK⬇</h1>
                     </div>
                     <audio id="musik2">
-                        <source src="projek 14.mp3">
+                        <source src="">
                     </audio>
                     <button onclick="play2()">
                         <h2 style="color: palevioletred;">🌸POPYUUU CANTIKK🌸</h2>
@@ -741,7 +741,7 @@
 <script>
 
 let musik1 = document.getElementById("musik1");
-// let musik2 = document.getElementById("musik2");
+let musik2 = document.getElementById("musik2");
 
 function play1(){
 
@@ -750,14 +750,11 @@ function play1(){
 
     musik1.play();
 }
-
-// function play2(){
-
-//     musik1.pause();
-//     musik1.currentTime = 0;
-
-//     musik2.play();
-// }
+function play2(){
+    musik1.pause();
+    musik1.currentTime = 0;
+    musik2.play();
+}
 
 </script>
 
